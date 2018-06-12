@@ -1,0 +1,152 @@
+.nav-container
+  width: 100%
+  +breakpoint(tablet)
+    width: auto
+  .nav
+    height: 100%
+    display: none
+    +breakpoint(tablet)
+      display: flex
+
+    .decoration-line
+      border-left: 1px solid $gray-lighter
+      height: 100%
+      margin:
+        left: 120px
+        right: 15px
+    .nav__items
+      height: 100%
+      display: flex
+      align-items: center
+
+      .nav__item
+        padding: 30px 15px
+        text-transform: uppercase
+        font:
+          weight: $bold
+          size: 14px
+
+        .nav__link
+          text-decoration: none
+          color: $gray-dark
+          &:visited
+            color: $gray-dark
+          &:hover
+            color: $brand-primary
+
+      .nav__item--active
+        .nav__link
+          color: $brand-primary
+          &:visited
+            color: $brand-primary
+        position: relative
+        &:after
+          display: flex
+          content: " "
+          width: 25px
+          height: 2px
+          background-color: $brand-primary-light
+          position: absolute
+          bottom: 20px
+          left: 40%
+
+  .hamburger-nav
+    z-index: 1000
+    top: 0
+    display: flex
+    flex-direction: column
+    align-items: flex-start
+    width: 50%
+
+    padding: 15px 0 15px 15px
+    box-sizing: border-box
+    background-color: white
+    margin-left: -30px
+    +breakpoint(tablet)
+      display: none
+
+    .menu-icon
+      height: 30px
+      width: 30px
+      padding-left: 30px
+
+    .menu-input-checkbox
+      display: none
+
+    .menu-input-label
+      display: flex
+      justify-content: center
+      align-items: center
+      height: 50px
+      width: 50px
+      z-index: 2000
+      &:hover
+        cursor: pointer
+      +breakpoint(tablet)
+        display: none
+
+    .menu--expanded
+      display: none
+
+    .menu-input-checkbox:checked ~ .menu--expanded
+      z-index: 9999999999
+      background-color: #fff
+      display: flex
+      flex-direction: column
+      justify-content: flex-start
+      align-items: center
+      position: absolute
+      padding:
+        top: 30px
+      top: 0
+      left: 0
+      right: 50%
+      bottom: 0
+      box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.13)
+      animation: slide-out 300ms forwards
+      .nav__item
+        padding: 30px 15px
+        text-transform: uppercase
+        font:
+          weight: $bold
+          size: 14px
+
+      .nav__link
+        text-decoration: none
+        color: $gray-dark
+        &:visited
+          color: $gray-dark
+        &:hover
+          color: $brand-primary
+
+      .nav__item--active
+        .nav__link
+          color: $brand-primary
+          &:visited
+            color: $brand-primary
+        position: relative
+        &:after
+          display: flex
+          content: " "
+          width: 25px
+          height: 2px
+          background-color: $brand-primary-light
+          position: absolute
+          bottom: 20px
+          left: 40%
+      .icon-close
+        color: $brand-primary
+        position: absolute
+        top: 25px
+        right: 25px
+        font:
+          size: 30px
+          weight: $bold
+
+
+
+@keyframes slide-out
+  from
+    right: 100%
+  to
+    right: 50%

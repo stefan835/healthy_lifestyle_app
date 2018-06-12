@@ -1,0 +1,197 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "Olivia",
+      "surname": "Wilde",
+      "avatar": "olivia_wilde.png",
+      "progress": 7,
+      "proteins": [
+        {
+          "vegetables": true,
+          "cheese": true,
+          "beef": true,
+          "fish": false,
+          "chicken": false
+        }
+      ],
+      "schedule": [
+        {
+          "day": 64,
+          "active": false,
+          "workout": true,
+          "carbon": "low-carb",
+          "diet": {
+            "6am": {
+              "content": "Bod•ē Shake",
+              "done": true
+            },
+            "9am": {
+              "content": "Ham and Swiss Roll Ups",
+              "done": true
+            },
+            "12pm": {
+              "content": "Turkey Melt",
+              "done": true
+            },
+            "3pm": {
+              "content": "Bod•ē Burn with Mozzarella and TomatoSlices",
+              "done": true
+            },
+            "6pm": {
+              "content": "Turkey Melt",
+              "done": false
+            }
+          }
+        },
+        {
+          "day": 65,
+          "active": true,
+          "workout": true,
+          "carbon": "low-carb",
+          "diet": {
+            "6am": {
+              "content": "Bod•ē Shake",
+              "done": true
+            },
+            "9am": {
+              "content": "Ham and Swiss Roll Ups",
+              "done": true
+            },
+            "12pm": {
+              "content": "Turkey Melt",
+              "done": true
+            },
+            "3pm": {
+              "content": "Bod•ē Burn with Mozzarella and TomatoSlices",
+              "done": true
+            },
+            "6pm": {
+              "content": "Turkey Melt",
+              "done": true
+            }
+          }
+        },
+        {
+          "day": 66,
+          "active": false,
+          "workout": false,
+          "carbon": "high-carb",
+          "diet": {
+            "6am": {
+              "content": "Bod•ē Shake",
+              "done": false
+            },
+            "9am": {
+              "content": "Grilled Steak (HC)",
+              "done": false
+            },
+            "12pm": {
+              "content": "Bod•ē Shake",
+              "done": false
+            },
+            "3pm": {
+              "content": "Bod•ē Burn and Whole-Wheat English Muffin with Butter Spray",
+              "done": false
+            },
+            "6pm": {
+              "content": "Garlic Lime Chicken (HC)",
+              "done": false
+            }
+          }
+        },
+        {
+          "day": 67,
+          "active": false,
+          "workout": false,
+          "carbon": "low-carb",
+          "diet": {
+            "6am": {
+              "content": "Bod•ē Shake",
+              "done": false
+            },
+            "9am": {
+              "content": "Ham and Swiss Roll Ups",
+              "done": false
+            },
+            "12pm": {
+              "content": "Turkey Melt",
+              "done": false
+            },
+            "3pm": {
+              "content": "Bod•ē Burn with Mozzarella and TomatoSlices",
+              "done": false
+            },
+            "6pm": {
+              "content": "Turkey Melt",
+              "done": false
+            }
+          }
+        },
+        {
+          "day": 68,
+          "active": false,
+          "workout": false,
+          "carbon": "low-carb",
+          "diet": {
+            "6am": {
+              "content": "Bod•ē Shake",
+              "done": false
+            },
+            "9am": {
+              "content": "Ham and Swiss Roll Ups",
+              "done": false
+            },
+            "12pm": {
+              "content": "Turkey Melt",
+              "done": false
+            },
+            "3pm": {
+              "content": "Bod•ē Burn with Mozzarella and TomatoSlices",
+              "done": false
+            },
+            "6pm": {
+              "content": "Turkey Melt",
+              "done": false
+            }
+          }
+        },
+        {
+          "day": 66,
+          "active": false,
+          "workout": false,
+          "carbon": "high-carb",
+          "diet": {
+            "6am": {
+              "content": "Bod•ē Shake",
+              "done": false
+            },
+            "9am": {
+              "content": "Grilled Steak (HC)",
+              "done": false
+            },
+            "12pm": {
+              "content": "Bod•ē Shake",
+              "done": false
+            },
+            "3pm": {
+              "content": "Bod•ē Burn and Whole-Wheat English Muffin with Butter Spray",
+              "done": false
+            },
+            "6pm": {
+              "content": "Garlic Lime Chicken (HC)",
+              "done": false
+            }
+          }
+        },
+        {
+          "day": 70,
+          "active": false,
+          "workout": null,
+          "carbon": null,
+          "diet": null
+        }
+      ]
+    }
+  ]
+}

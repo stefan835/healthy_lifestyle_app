@@ -1,0 +1,26 @@
+.loader-container
+  display: flex
+  justify-content: center
+  align-items: center
+  height: 100vh
+  width: 100%
+  background-color: $brand-secondary-light
+
+  .loader
+    border: 16px solid $gray-base
+    border-top: 16px solid $brand-primary
+    width: 120px
+    height: 120px
+    -webkit-animation: spin 1.5s linear infinite
+    animation: spin 1.5s linear infinite
+
+@keyframes spin
+  0%
+    transform: rotate(0deg)
+
+  30%
+    transform: rotate(180deg)
+
+  100%
+    transform: rotate(360deg)
+

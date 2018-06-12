@@ -1,6 +1,10 @@
 import {createStore, combineReducers} from 'redux'
 
-const reducer = combineReducers({});
+import userData from './state/userData'
+
+const reducer = combineReducers({
+  userData
+});
 
 const store = createStore(
   reducer,
