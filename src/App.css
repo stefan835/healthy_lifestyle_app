@@ -82,7 +82,7 @@ body {
   align-items: center;
   height: 100vh;
   width: 100%;
-  background-color: #f1f99a;
+  background-color: #f6ff8f;
 }
 .loader-container .loader {
   border: 16px solid #828282;
@@ -112,6 +112,7 @@ body {
   display: flex;
   justify-content: space-between;
   height: 80px;
+  margin-bottom: 35px;
 }
 
 .nav-container {
@@ -327,6 +328,76 @@ body {
 }
 .user-panel .icon-arrow:hover {
   cursor: pointer;
+}
+
+.progress {
+  display: flex;
+  flex-direction: column;
+  color: #dbdbdb;
+  font-size: 10px;
+  text-transform: uppercase;
+}
+
+.progress__indicator {
+  position: relative;
+  height: 100px;
+  display: flex;
+  margin-left: -5px;
+  margin-top: 10px;
+}
+
+.week-indicator {
+  height: 10px;
+  width: 10px;
+  display: block;
+  margin: 5px;
+  border-radius: 50%;
+  position: relative;
+}
+.week-indicator:after {
+  position: absolute;
+  top: 4px;
+  left: 10px;
+  display: block;
+  content: " ";
+  width: 10px;
+  height: 2px;
+  background-color: #adbb0c;
+}
+.week-indicator .progress__number {
+  position: absolute;
+  top: 15px;
+}
+
+.week-indicator--past {
+  background-color: #adbb0c;
+}
+
+.week-indicator--active {
+  height: 6px;
+  width: 6px;
+  background-color: #fff;
+  border: 2px solid #dbdbdb;
+}
+.week-indicator--active:after {
+  top: 2px;
+  left: 8px;
+  background-color: #dbdbdb;
+}
+.week-indicator--active .progress__number {
+  position: absolute;
+  top: 13px;
+}
+
+.week-indicator--future {
+  background-color: #dbdbdb;
+}
+.week-indicator--future:after {
+  background-color: #dbdbdb;
+}
+
+.week-indicator:last-child:after {
+  display: none;
 }
 
 /*# sourceMappingURL=App.css.map */

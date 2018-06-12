@@ -5,7 +5,7 @@ class Navigation extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      active: 0
+      active: 1
     };
   }
 
@@ -18,22 +18,23 @@ class Navigation extends React.Component {
   render() {
     const handlerClick = (e) => {
       this.setState({
-        active: parseInt(e.target.getAttribute('data-id'), 10)
+        active: parseInt(e.target.getAttribute('data-id'), 10) || this.state.active
       })
     };
+
     return (
       <div className="nav-container">
         <nav className={'nav'}>
           <span className='decoration-line'> </span>
           <ul className='nav__items' onClick={handlerClick}>
-            <li className={`${ this.state.active !== 0 ? 'nav__item' : 'nav__item nav__item--active'}`}>
-              <Link to={'/dashboard'} className="nav__link" data-id={0}>Dashboard</Link>
-            </li>
             <li className={`${ this.state.active !== 1 ? 'nav__item' : 'nav__item nav__item--active'}`}>
-              <Link to={'/recipes'} className="nav__link" data-id={1}>Recipes</Link>
+              <Link to={'/dashboard'} className="nav__link" data-id={1}>Dashboard</Link>
             </li>
             <li className={`${ this.state.active !== 2 ? 'nav__item' : 'nav__item nav__item--active'}`}>
-              <Link to={'/challenge'} className="nav__link" data-id={2}>Challenge</Link>
+              <Link to={'/recipes'} className="nav__link" data-id={2}>Recipes</Link>
+            </li>
+            <li className={`${ this.state.active !== 3 ? 'nav__item' : 'nav__item nav__item--active'}`}>
+              <Link to={'/challenge'} className="nav__link" data-id={3}>Challenge</Link>
             </li>
           </ul>
         </nav>
@@ -46,14 +47,14 @@ class Navigation extends React.Component {
             <label htmlFor="open-menu-input" className="menu-input-label">
               <span className='icon-close'>x</span>
             </label>
-            <li className={`${ this.state.active !== 0 ? 'nav__item' : 'nav__item nav__item--active'}`}>
-              <Link to={'/dashboard'} className="nav__link" data-id={0}>Dashboard</Link>
-            </li>
             <li className={`${ this.state.active !== 1 ? 'nav__item' : 'nav__item nav__item--active'}`}>
-              <Link to={'/recipes'} className="nav__link" data-id={1}>Recipes</Link>
+              <Link to={'/dashboard'} className="nav__link" data-id={1}>Dashboard</Link>
             </li>
             <li className={`${ this.state.active !== 2 ? 'nav__item' : 'nav__item nav__item--active'}`}>
-              <Link to={'/challenge'} className="nav__link" data-id={2}>Challenge</Link>
+              <Link to={'/recipes'} className="nav__link" data-id={2}>Recipes</Link>
+            </li>
+            <li className={`${ this.state.active !== 3 ? 'nav__item' : 'nav__item nav__item--active'}`}>
+              <Link to={'/challenge'} className="nav__link" data-id={3}>Challenge</Link>
             </li>
           </ul>
         </nav>

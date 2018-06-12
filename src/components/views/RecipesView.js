@@ -4,7 +4,7 @@ import Header from '../Header'
 
 const RecipesView = () => {
   return (
-    <Header active={1}/>
+    <Header active={2}/>
   )
 };
 

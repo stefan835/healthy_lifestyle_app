@@ -1,0 +1,61 @@
+.progress
+  display: flex
+  flex-direction: column
+  color: $almost-white
+  font-size: 10px
+  text-transform: uppercase
+
+.progress__indicator
+  position: relative
+  height: 100px
+  display: flex
+  margin:
+    left: -5px
+    top: 10px
+
+
+.week-indicator
+  height: 10px
+  width: 10px
+  display: block
+  margin: 5px
+  border-radius: 50%
+  position: relative
+  &:after
+    position: absolute
+    top: 4px
+    left: 10px
+    display: block
+    content: ' '
+    width: 10px
+    height: 2px
+    background-color: $brand-secondary-dark
+  .progress__number
+    position: absolute
+    top: 15px
+
+.week-indicator--past
+  background-color: $brand-secondary-dark
+
+.week-indicator--active
+  height: 6px
+  width: 6px
+  background-color: #fff
+  border: 2px solid $almost-white
+  &:after
+    top: 2px
+    left: 8px
+    background-color: $almost-white
+  .progress__number
+    position: absolute
+    top: 13px
+
+.week-indicator--future
+  background-color: $almost-white
+  &:after
+    background-color: $almost-white
+
+.week-indicator:last-child
+  &:after
+    display: none
+
