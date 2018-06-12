@@ -3,11 +3,11 @@ import React from 'react'
 import Navigation from './Navigation'
 import UserPanel from './UserPanel'
 
-const Header = () => {
+const Header = (props) => {
   return (
     <header className='header'>
       <div className='container header__container'>
-        <Navigation/>
+        <Navigation active={props.active}/>
         <UserPanel/>
       </div>
     </header>

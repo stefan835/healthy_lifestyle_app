@@ -4,7 +4,7 @@ import Header from '../Header'
 
 const DashboardView = () => {
   return (
-    <Header/>
+    <Header active={0}/>
   )
 };
 
