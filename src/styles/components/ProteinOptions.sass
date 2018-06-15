@@ -1,0 +1,70 @@
+.protein-options
+  color: $almost-white
+  font-size: 10px
+  text-transform: uppercase
+  display: flex
+  flex-direction: column
+  align-items: flex-end
+  margin:
+    bottom: 30px
+  +breakpoint(tablet)
+    margin:
+      bottom: 0
+
+  .protein-options__title
+    display: flex
+    align-self: center
+    +breakpoint(tablet)
+      align-self: flex-start
+      text-indent: 8px
+
+  .protein-list
+    display: flex
+    align-items: center
+    justify-content: flex-end
+    margin:
+      top: 10px
+
+    .protein
+      height: 25px
+      width: 25px
+      margin: 0 8px
+      path
+        transition: all 300ms
+      &:hover
+        cursor: pointer
+
+    .protein--active
+      &:hover
+        cursor: pointer
+      #_dark_
+        path
+          fill: $brand-secondary !important
+      &:hover
+        #_dark_
+          path
+            fill: $gray-light !important
+
+    .protein--inactive
+      position: relative
+      #_dark_
+        path
+          fill: $gray-light !important
+      &:hover
+        cursor: pointer
+        #_dark_
+          path
+            fill: $brand-secondary !important
+
+
+      &:after
+        transition: all 300ms
+        content: " "
+        height: 25px
+        width: 0
+        border-left: #fff 1px solid
+        border-right: $gray-light 1px solid
+        transform: rotate(45deg)
+        position: absolute
+        top: 0
+        left: 45%

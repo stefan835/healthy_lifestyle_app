@@ -1,5 +1,4 @@
 import React from 'react'
-import {connect} from 'react-redux'
 
 const ProgressIndicator = (props) => {
   let weeks = [];
@@ -8,7 +7,7 @@ const ProgressIndicator = (props) => {
   }
   return (
     <div className="progress">
-      YOUR 12 WEEK PROGRESS
+      <h3>YOUR 12 WEEK PROGRESS</h3>
       <div className='progress__indicator'>
         {
           weeks.map(function (week) {
@@ -34,6 +33,4 @@ const ProgressIndicator = (props) => {
   )
 };
 
-export default connect(
-  state => ({user: state.userData.user}),
-)(ProgressIndicator)
+export default ProgressIndicator

@@ -6,15 +6,13 @@
       "surname": "Wilde",
       "avatar": "olivia_wilde.png",
       "progress": 7,
-      "proteins": [
-        {
-          "vegetables": true,
-          "cheese": true,
-          "beef": true,
-          "fish": false,
-          "chicken": false
-        }
-      ],
+      "proteins": {
+        "vegetables": true,
+        "cheese": true,
+        "beef": true,
+        "fish": false,
+        "chicken": false
+      },
       "schedule": [
         {
           "day": 64,

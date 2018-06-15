@@ -1,0 +1,29 @@
+.slider
+  display: flex
+  align-items: center
+  justify-content: space-between
+  order: -1
+  margin:
+    bottom: 30px
+  +breakpoint(tablet)
+    order: 0
+    margin:
+      bottom: 0
+  .btn
+    transition: all 300ms
+    .icon-arrow
+      path
+        transition: all 300ms
+    &:hover
+      border-color: $brand-primary
+      .icon-arrow
+        path
+          fill: $brand-primary !important
+
+.counter
+  font-size: 32px
+  padding: 0 30px
+  color: $brand-primary
+  +breakpoint(desktop)
+    font-size: 46px
+    padding: 0 45px
