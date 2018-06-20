@@ -41,7 +41,7 @@ class Navigation extends React.Component {
         <nav className="hamburger-nav" onClick={handlerClick}>
           <input type="checkbox" id="open-menu-input" className="menu-input-checkbox"/>
           <label htmlFor="open-menu-input" className="menu-input-label">
-            <img className="menu-icon" src="media/menu.svg" alt="menu"/>
+            <img className="menu-icon" src="media/icons/menu.svg" alt="menu"/>
           </label>
           <ul className="menu--expanded">
             <label htmlFor="open-menu-input" className="menu-input-label">

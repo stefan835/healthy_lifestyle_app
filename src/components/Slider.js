@@ -45,14 +45,14 @@ class Slider extends React.Component {
       <div className='slider'>
         <button className="btn btn-prev" onClick={decrease}>
           <ReactSVG
-            path={`media/Arrow.svg`}
+            path={`media/icons/Arrow.svg`}
             svgClassName={'icon-arrow'}
           />
         </button>
         <h2 className="counter">Week {this.state.currentPage}</h2>
         <button className="btn btn-next" onClick={increase}>
           <ReactSVG
-            path={`media/Arrow.svg`}
+            path={`media/icons/Arrow.svg`}
             svgClassName={'icon-arrow'}
           />
         </button>

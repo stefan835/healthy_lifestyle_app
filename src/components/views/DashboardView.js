@@ -2,6 +2,7 @@ import React from 'react'
 
 import Header from '../Header'
 import StateBar from "../StateBar";
+import Schedule from "../Schedule";
 
 const DashboardView = () => {
   return (
@@ -9,6 +10,7 @@ const DashboardView = () => {
       <Header active={1}/>
       <div className='container'>
         <StateBar/>
+        <Schedule/>
       </div>
     </div>
   )

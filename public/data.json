@@ -33,7 +33,7 @@
               "done": true
             },
             "3pm": {
-              "content": "Bod•ē Burn with Mozzarella and TomatoSlices",
+              "content": "Bod•ē Burn with Mozzarella and Tomato Slices",
               "done": true
             },
             "6pm": {
@@ -50,23 +50,23 @@
           "diet": {
             "6am": {
               "content": "Bod•ē Shake",
-              "done": true
+              "done": false
             },
             "9am": {
               "content": "Ham and Swiss Roll Ups",
-              "done": true
+              "done": false
             },
             "12pm": {
               "content": "Turkey Melt",
-              "done": true
+              "done": false
             },
             "3pm": {
-              "content": "Bod•ē Burn with Mozzarella and TomatoSlices",
-              "done": true
+              "content": "Bod•ē Burn with Mozzarella and Tomato Slices",
+              "done": false
             },
             "6pm": {
               "content": "Turkey Melt",
-              "done": true
+              "done": false
             }
           }
         },
@@ -117,7 +117,7 @@
               "done": false
             },
             "3pm": {
-              "content": "Bod•ē Burn with Mozzarella and TomatoSlices",
+              "content": "Bod•ē Burn with Mozzarella and Tomato Slices",
               "done": false
             },
             "6pm": {
@@ -145,7 +145,7 @@
               "done": false
             },
             "3pm": {
-              "content": "Bod•ē Burn with Mozzarella and TomatoSlices",
+              "content": "Bod•ē Burn with Mozzarella and Tomato Slices",
               "done": false
             },
             "6pm": {

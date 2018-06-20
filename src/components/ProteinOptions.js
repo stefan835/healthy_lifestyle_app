@@ -1,7 +1,7 @@
 import React from 'react'
 import ReactSVG from 'react-svg'
 
-import {getObjectKeys} from "./_utils/index";
+import {getObjectKeys} from "./_utils/getObjectKeys";
 import {connect} from "react-redux";
 import {userDataUpdate} from "../state/userData";
 
@@ -35,7 +35,7 @@ class ProteinOptions extends React.Component {
       })
     };
 
-    const proteins = getObjectKeys(this.props.user.proteins)
+    const proteins = getObjectKeys(this.props.user.proteins);
     return (
       <div className="protein-options">
         <h3 className="protein-options__title"> SELECT YOUR PROTEIN OPTIONS</h3>
@@ -61,6 +61,6 @@ class ProteinOptions extends React.Component {
 export default connect(
   state => ({}),
   dispatch => ({
-    userDataUpdate: (whatToUpdate, newData) => dispatch(userDataUpdate(whatToUpdate, newData))
+    userDataUpdate: (key, newData) => dispatch(userDataUpdate(key, newData))
   })
 )(ProteinOptions)
