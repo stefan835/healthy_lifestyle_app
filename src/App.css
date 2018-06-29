@@ -683,6 +683,21 @@ body {
 .schedule .table .table__column--active .free-day {
   color: #ff801a;
 }
+.schedule .table .table__column--active .icon-dumbbell:hover {
+  cursor: pointer;
+}
+.schedule .table .table__column--active .icon-dumbbell:hover #_dark_ line {
+  stroke: #828282 !important;
+}
+.schedule .table .table__column--active .icon-dumbbell--done:hover {
+  cursor: pointer;
+}
+.schedule .table .table__column--active .icon-dumbbell--done:hover:after {
+  content: none;
+}
+.schedule .table .table__column--active .icon-dumbbell--done:hover #_dark_ line {
+  stroke: #ff801a !important;
+}
 .schedule .table .table__headers {
   display: none;
   flex-direction: column;
@@ -781,26 +796,11 @@ body {
   position: relative;
   width: 28px;
 }
-.schedule .table .grid--short .icon-dumbbell:hover {
-  cursor: pointer;
-}
-.schedule .table .grid--short .icon-dumbbell:hover #_dark_ line {
-  stroke: #828282 !important;
-}
 .schedule .table .grid--short .icon-dumbbell #_dark_ line {
   stroke: #a4a4a4 !important;
 }
 .schedule .table .grid--short .icon-dumbbell #_light_ line {
   stroke: #c2c2c2 !important;
-}
-.schedule .table .grid--short .icon-dumbbell--done:hover {
-  cursor: pointer;
-}
-.schedule .table .grid--short .icon-dumbbell--done:hover:after {
-  content: none;
-}
-.schedule .table .grid--short .icon-dumbbell--done:hover #_dark_ line {
-  stroke: #ff801a !important;
 }
 .schedule .table .grid--short .icon-dumbbell--done #_dark_ line {
   stroke: #ff801a !important;

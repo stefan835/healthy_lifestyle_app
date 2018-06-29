@@ -100,6 +100,20 @@
             height: 33px
       .free-day
         color: $brand-primary
+      .icon-dumbbell
+        &:hover
+          cursor: pointer
+          #_dark_
+            line
+              stroke: $gray-base !important
+      .icon-dumbbell--done
+        &:hover
+          cursor: pointer
+          &:after
+            content: none
+          #_dark_
+            line
+              stroke: $brand-primary !important
 
     .table__headers
       display: none
@@ -184,11 +198,6 @@
         display: flex
         position: relative
         width: 28px
-        &:hover
-          cursor: pointer
-          #_dark_
-            line
-              stroke: $gray-base !important
         #_dark_
           line
             stroke: $gray-light !important
@@ -197,13 +206,6 @@
             stroke: $gray-lighter !important
 
       .icon-dumbbell--done
-        &:hover
-          cursor: pointer
-          &:after
-            content: none
-          #_dark_
-            line
-              stroke: $brand-primary !important
         #_dark_
           line
             stroke: $brand-primary !important

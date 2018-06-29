@@ -35,11 +35,11 @@ class ScheduleColumnDietDay extends React.Component {
       })
     };
 
-    const isActive = (e) => {
-      return this.props.day.active ? markAsDone(e) : null
+    const isActive = (e, fnc) => {
+      return this.props.day.active ? fnc(e) : null
     };
 
-    const markAsDone = (e) => {
+    const toggleDone = (e) => {
       const hour = e.currentTarget.getAttribute('data-id');
       this.setState({
         ...this.state,
@@ -54,14 +54,16 @@ class ScheduleColumnDietDay extends React.Component {
       <tr className={this.props.day.active ? 'table__column table__column--active' : 'table__column'}>
         <th className='column__header'>Day {this.props.day.day}</th>
         {
-          getObjectKeys(this.props.day.diet).map((name, index) => {
-            return <td className={this.props.day.diet[name].content === 'Bod•ē Shake' ? 'grid shake' : 'grid'}
+          getObjectKeys(this.props.day.diet).map((key, index) => {
+            return <td className={this.props.day.diet[key].content === 'Bod•ē Shake' ? 'grid shake' : 'grid'}
                        key={index}
-                       onClick={isActive}
-                       data-id={name}>
-              <div className='time-indicator'><span className='table__time'>{formatTime(name)}</span></div>
-              {this.state.dayActivities[name] ? <span className='icon-done'/> : null}
-              {this.props.day.diet[name].content}
+                       onClick={(e) => {
+                         isActive(e, toggleDone)
+                       }}
+                       data-id={key}>
+              <div className='time-indicator'><span className='table__time'>{formatTime(key)}</span></div>
+              {this.state.dayActivities[key] ? <span className='icon-done'/> : null}
+              {this.props.day.diet[key].content}
             </td>
           })
         }
@@ -71,14 +73,18 @@ class ScheduleColumnDietDay extends React.Component {
             path={`media/icons/dumbbell.svg`}
             svgClassName={'icon-dumbbell icon-dumbbell--done'}
             className={'icon-dumbbell icon-dumbbell--done'}
-            onClick={toggleWorkout}
+            onClick={(e) => {
+              isActive(e, toggleWorkout)
+            }}
           />
           :
           <ReactSVG
             path={`media/icons/dumbbell.svg`}
             svgClassName={'icon-dumbbell'}
             className={'icon-dumbbell'}
-            onClick={toggleWorkout}
+            onClick={(e) => {
+              isActive(e, toggleWorkout)
+            }}
           />
         }</td>
       </tr>
