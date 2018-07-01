@@ -683,6 +683,9 @@ body {
 .schedule .table .table__column--active .free-day {
   color: #ff801a;
 }
+.schedule .table .table__column--active .icon-dumbbell {
+  transition: all 300ms;
+}
 .schedule .table .table__column--active .icon-dumbbell:hover {
   cursor: pointer;
 }
@@ -872,6 +875,7 @@ body {
   }
 }
 .schedule .table .print-grid .print {
+  transition: all 300ms;
   max-width: 120px;
   width: 100%;
   text-align: center;
