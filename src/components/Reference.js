@@ -7,7 +7,11 @@ const Reference = (props) => {
             <h2 className="reference__content">{props.content}</h2>
             <div className="reference__buttons">
                 {props.buttons.map(btn =>
-                    <a className="btn btn--primary" href={btn.url}>{btn.title}</a>
+                    <a className="btn btn--primary" href={btn.url}>
+                        {btn.icon ?
+                            <img src={btn.icon} alt="icon"/>
+                            : null}
+                        {btn.title}</a>
                 )}
             </div>
         </div>

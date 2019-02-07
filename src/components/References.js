@@ -9,11 +9,32 @@ const References = () => {
                        buttons={[
                            {
                                title: "Buy now",
+                               icon: null,
+                               url: "#",
+                           }
+                       ]}/>
+            <Reference title={"Bod•e Trainer in your pocket"}
+                       content={"Lorem ipsum dolor sit amet, consect turadipiscing elit. Integer aliquet."}
+                       buttons={[
+                           {
+                               title: "iOS",
+                               icon: "/apple",
+                               url: "#"
+                           }, {
+                               title: "Android",
+                               icon: "/android",
                                url: "#"
                            }
                        ]}/>
-            {/*<Reference/>*/}
-            {/*<Reference/>*/}
+            <Reference title={"Frequently Asked Questions"}
+                       content={"Lorem ipsum dolor sit amet, consect turadipiscing elit. Integer aliquet."}
+                       buttons={[
+                           {
+                               title: "Read FAQs",
+                               icon: null,
+                               url: "#"
+                           }
+                       ]}/>
         </div>
     )
 };
