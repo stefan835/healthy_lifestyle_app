@@ -116,13 +116,13 @@
         color: $brand-primary
 
       .icon-dumbbell
-        transition: all 300ms
-
         &:hover
           cursor: pointer
 
           #_dark_
             line
+              transition: all 300ms
+
               stroke: $gray-base !important
 
       .icon-dumbbell--done
@@ -173,6 +173,7 @@
       height: 120px
       text-align: center
       justify-content: center
+      transition: all 300ms
       +breakpoint(tablet)
         justify-content: flex-start
         padding:
@@ -329,6 +330,12 @@
           size: 16px
           weight: $bold
         color: $gray-light
+
+        .icon-print
+          .cls-1
+            transition: all 300ms
+            fill: $gray-light
+
 
         &:hover
           color: $gray-base

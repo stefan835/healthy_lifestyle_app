@@ -1,4 +1,5 @@
 import React from 'react'
+import ReactSVG from 'react-svg'
 
 const Reference = (props) => {
     return (
@@ -6,12 +7,15 @@ const Reference = (props) => {
             <h2 className="reference__title">{props.title}</h2>
             <h2 className="reference__content">{props.content}</h2>
             <div className="reference__buttons">
-                {props.buttons.map(btn =>
-                    <a className="btn btn--primary" href={btn.url}>
+                {props.buttons.map((btn, index) =>
+                    <a key={index} className={`btn btn--primary ${btn.class}`} href={btn.url}>
                         {btn.icon ?
-                            <img src={btn.icon} alt="icon"/>
+                            <img className="btn-logo" src={btn.icon} alt="icon"/>
                             : null}
-                        {btn.title}</a>
+                        {btn.title} <ReactSVG
+                        path={`media/icons/Arrow.svg`}
+                        svgClassName={'btn-arrow'}
+                    /></a>
                 )}
             </div>
         </div>

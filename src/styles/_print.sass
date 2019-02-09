@@ -9,12 +9,16 @@
     width: 100vh
     height: 100vh
     margin-right: 150px
+
     .table
       flex-direction: row
+
       .table__column--active
         border: none
+
         .column__header
           height: 50px
+
       .grid
         display: flex
         justify-content: center
@@ -23,23 +27,30 @@
         text-align: center
         width: 200px
         height: 150px
+
         .time-indicator
           display: none
+
       .table__column
         &:first-child
           .grid
             width: 150px
             height: 141px
+
             &:nth-child(5)
               margin-bottom: 0
+
         &:last-child
           .grid
             width: 150px
+
         .table__headers
           .grid
             height: 130px
+
         .workout
           flex: 2
+
       .table__column--active
         .grid--short
           &:last-child

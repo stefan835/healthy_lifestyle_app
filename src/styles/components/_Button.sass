@@ -4,8 +4,37 @@
   background: none
   border-radius: 5px
   max-height: 42px
+  color: $gray-base
+  text-decoration: none
+  position: relative
+  transition: all 300ms
+
   &:hover
     cursor: pointer
+    text-decoration: underline
 
 .btn-next
   transform: rotateY(180deg)
+
+.btn--primary
+  min-width: 95px
+  display: flex
+  align-items: center
+  justify-content: space-around
+  padding: 8px 12px
+  margin-right: 15px
+
+  .btn-logo
+    display: flex
+    align-self: center
+    margin-top: -3px
+
+
+  .btn-arrow
+    height: 14px
+    width: 7px
+    transform: rotate(180deg)
+    display: flex
+
+.btn--short
+  box-sizing: border-box

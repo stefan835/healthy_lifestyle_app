@@ -11,6 +11,7 @@ const References = () => {
                                title: "Buy now",
                                icon: null,
                                url: "#",
+                               class: null,
                            }
                        ]}/>
             <Reference title={"Bod•e Trainer in your pocket"}
@@ -18,12 +19,14 @@ const References = () => {
                        buttons={[
                            {
                                title: "iOS",
-                               icon: "/apple",
-                               url: "#"
+                               icon: "media/icons/apple.png",
+                               url: "#",
+                               class: "btn--short"
                            }, {
                                title: "Android",
-                               icon: "/android",
-                               url: "#"
+                               icon: "media/icons/android.png",
+                               url: "#",
+                               class: null,
                            }
                        ]}/>
             <Reference title={"Frequently Asked Questions"}
@@ -32,7 +35,8 @@ const References = () => {
                            {
                                title: "Read FAQs",
                                icon: null,
-                               url: "#"
+                               url: "#",
+                               class: null,
                            }
                        ]}/>
         </div>

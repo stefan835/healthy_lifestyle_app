@@ -45,7 +45,8 @@ table {
 body {
   font-family: "Roboto", sans-serif;
   color: #828282;
-  background-color: #f9f9f9; }
+  background-color: #f9f9f9;
+  padding-bottom: 80px; }
 
 .container {
   width: 100%;
@@ -62,6 +63,48 @@ body {
     .container {
       max-width: 75em; } }
 
+@media print {
+  .header {
+    display: none; }
+
+  .state-bar {
+    display: none; }
+
+  .schedule {
+    -webkit-print-color-adjust: exact;
+    transform: rotate(90deg);
+    width: 100vh;
+    height: 100vh;
+    margin-right: 150px; }
+    .schedule .table {
+      flex-direction: row; }
+      .schedule .table .table__column--active {
+        border: none; }
+        .schedule .table .table__column--active .column__header {
+          height: 50px; }
+      .schedule .table .grid {
+        display: flex;
+        justify-content: center;
+        font-size: 20px;
+        align-items: center;
+        text-align: center;
+        width: 200px;
+        height: 150px; }
+        .schedule .table .grid .time-indicator {
+          display: none; }
+      .schedule .table .table__column:first-child .grid {
+        width: 150px;
+        height: 141px; }
+        .schedule .table .table__column:first-child .grid:nth-child(5) {
+          margin-bottom: 0; }
+      .schedule .table .table__column:last-child .grid {
+        width: 150px; }
+      .schedule .table .table__column .table__headers .grid {
+        height: 130px; }
+      .schedule .table .table__column .workout {
+        flex: 2; }
+      .schedule .table .table__column--active .grid--short:last-child {
+        height: 150px; } }
 .loader-container {
   display: flex;
   justify-content: center;
@@ -388,12 +431,37 @@ body {
   padding: 10px 7px;
   background: none;
   border-radius: 5px;
-  max-height: 42px; }
+  max-height: 42px;
+  color: #828282;
+  text-decoration: none;
+  position: relative;
+  transition: all 300ms; }
   .btn:hover {
-    cursor: pointer; }
+    cursor: pointer;
+    text-decoration: underline; }
 
 .btn-next {
   transform: rotateY(180deg); }
+
+.btn--primary {
+  min-width: 95px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 8px 12px;
+  margin-right: 15px; }
+  .btn--primary .btn-logo {
+    display: flex;
+    align-self: center;
+    margin-top: -3px; }
+  .btn--primary .btn-arrow {
+    height: 14px;
+    width: 7px;
+    transform: rotate(180deg);
+    display: flex; }
+
+.btn--short {
+  box-sizing: border-box; }
 
 .protein-options {
   color: #dbdbdb;
@@ -538,12 +606,11 @@ body {
               height: 33px; } }
       .schedule .table .table__column--active .free-day {
         color: #ff801a; }
-      .schedule .table .table__column--active .icon-dumbbell {
-        transition: all 300ms; }
-        .schedule .table .table__column--active .icon-dumbbell:hover {
-          cursor: pointer; }
-          .schedule .table .table__column--active .icon-dumbbell:hover #_dark_ line {
-            stroke: #828282 !important; }
+      .schedule .table .table__column--active .icon-dumbbell:hover {
+        cursor: pointer; }
+        .schedule .table .table__column--active .icon-dumbbell:hover #_dark_ line {
+          transition: all 300ms;
+          stroke: #828282 !important; }
       .schedule .table .table__column--active .icon-dumbbell--done:hover {
         cursor: pointer; }
         .schedule .table .table__column--active .icon-dumbbell--done:hover:after {
@@ -582,7 +649,8 @@ body {
       position: relative;
       height: 120px;
       text-align: center;
-      justify-content: center; }
+      justify-content: center;
+      transition: all 300ms; }
       @media (min-width: 48em) {
         .schedule .table .grid {
           justify-content: flex-start;
@@ -716,6 +784,9 @@ body {
         font-size: 16px;
         font-weight: 700;
         color: #a4a4a4; }
+        .schedule .table .print-grid .print .icon-print .cls-1 {
+          transition: all 300ms;
+          fill: #a4a4a4; }
         .schedule .table .print-grid .print:hover {
           color: #828282;
           cursor: pointer; }
@@ -758,47 +829,38 @@ body {
         border-bottom: 3px solid transparent;
         border-left: 3px solid #828282; }
 
-@media print {
-  .header {
-    display: none; }
-
-  .state-bar {
-    display: none; }
-
-  .schedule {
-    -webkit-print-color-adjust: exact;
-    transform: rotate(90deg);
-    width: 100vh;
-    height: 100vh;
-    margin-right: 150px; }
-    .schedule .table {
-      flex-direction: row; }
-      .schedule .table .table__column--active {
-        border: none; }
-        .schedule .table .table__column--active .column__header {
-          height: 50px; }
-      .schedule .table .grid {
-        display: flex;
-        justify-content: center;
-        font-size: 20px;
-        align-items: center;
-        text-align: center;
-        width: 200px;
-        height: 150px; }
-        .schedule .table .grid .time-indicator {
-          display: none; }
-      .schedule .table .table__column:first-child .grid {
-        width: 150px;
-        height: 141px; }
-        .schedule .table .table__column:first-child .grid:nth-child(5) {
-          margin-bottom: 0; }
-      .schedule .table .table__column:last-child .grid {
-        width: 150px; }
-      .schedule .table .table__column .table__headers .grid {
-        height: 130px; }
-      .schedule .table .table__column .workout {
-        flex: 2; }
-      .schedule .table .table__column--active .grid--short:last-child {
-        height: 150px; } }
+.references {
+  display: flex; }
+  .references .reference {
+    flex: 1 1 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 45px;
+    padding-left: 40px; }
+  .references .reference__buttons {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px; }
+    .references .reference__buttons .reference__button {
+      color: #828282; }
+  .references .reference__title {
+    color: #828282;
+    font-size: 28px;
+    font-weight: 400;
+    line-height: 29px;
+    letter-spacing: -0.27px;
+    text-align: left;
+    margin-bottom: 20px; }
+  .references .reference__content {
+    color: #828282;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 21px;
+    letter-spacing: -0.14px; }
+  .references:nth-child(2) {
+    border-left: 1px solid #dbdbdb;
+    border-right: 1px solid #dbdbdb; }
 
 /*# sourceMappingURL=App.css.map */

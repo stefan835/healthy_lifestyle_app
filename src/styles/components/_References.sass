@@ -1,0 +1,40 @@
+.references
+  display: flex
+
+  .reference
+    flex: 1 1 auto
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: flex-start
+    margin-top: 45px
+    padding-left: 40px
+
+  .reference__buttons
+    display: flex
+    justify-content: space-around
+    margin-top: 20px
+
+    .reference__button
+      color: $gray-base
+
+  .reference__title
+    color: $gray-base
+    font:
+      size: 28px
+      weight: 400
+    line-height: 29px
+    letter-spacing: -0.27px
+    text-align: left
+    margin-bottom: 20px
+
+  .reference__content
+    color: $gray-base
+    font-size: 15px
+    font-weight: 400
+    line-height: 21px
+    letter-spacing: -0.14px
+
+  &:nth-child(2)
+    border-left: 1px solid $almost-white
+    border-right: 1px solid $almost-white
