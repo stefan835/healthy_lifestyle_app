@@ -1,5 +1,9 @@
 .references
   display: flex
+  flex-direction: column
+  +breakpoint(tablet)
+    flex-direction: row
+    justify-content: space-between
 
   .reference
     flex: 1 1 auto
@@ -8,7 +12,7 @@
     justify-content: center
     align-items: flex-start
     margin-top: 45px
-    padding-left: 40px
+    max-width: 290px
 
   .reference__buttons
     display: flex

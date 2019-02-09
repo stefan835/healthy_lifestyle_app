@@ -830,7 +830,12 @@ body {
         border-left: 3px solid #828282; }
 
 .references {
-  display: flex; }
+  display: flex;
+  flex-direction: column; }
+  @media (min-width: 48em) {
+    .references {
+      flex-direction: row;
+      justify-content: space-between; } }
   .references .reference {
     flex: 1 1 auto;
     display: flex;
@@ -838,7 +843,7 @@ body {
     justify-content: center;
     align-items: flex-start;
     margin-top: 45px;
-    padding-left: 40px; }
+    max-width: 290px; }
   .references .reference__buttons {
     display: flex;
     justify-content: space-around;
