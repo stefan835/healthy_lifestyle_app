@@ -45,7 +45,7 @@
         {
           "day": 65,
           "active": true,
-          "workout": true,
+          "workout": false,
           "carbon": "low-carb",
           "diet": {
             "6am": {

@@ -1,6 +1,13 @@
 {
-  "main.css": "static/css/main.f6569ec3.css",
-  "main.css.map": "static/css/main.f6569ec3.css.map",
-  "main.js": "static/js/main.987694e7.js",
-  "main.js.map": "static/js/main.987694e7.js.map"
+  "main.css": "/healthy_lifestyle_app/static/css/main.1c73a8b3.chunk.css",
+  "main.js": "/healthy_lifestyle_app/static/js/main.0bf0bd61.chunk.js",
+  "main.js.map": "/healthy_lifestyle_app/static/js/main.0bf0bd61.chunk.js.map",
+  "static/js/1.4021bec0.chunk.js": "/healthy_lifestyle_app/static/js/1.4021bec0.chunk.js",
+  "static/js/1.4021bec0.chunk.js.map": "/healthy_lifestyle_app/static/js/1.4021bec0.chunk.js.map",
+  "runtime~main.js": "/healthy_lifestyle_app/static/js/runtime~main.86541d14.js",
+  "runtime~main.js.map": "/healthy_lifestyle_app/static/js/runtime~main.86541d14.js.map",
+  "static/css/main.1c73a8b3.chunk.css.map": "/healthy_lifestyle_app/static/css/main.1c73a8b3.chunk.css.map",
+  "index.html": "/healthy_lifestyle_app/index.html",
+  "precache-manifest.65d5a16a3363a8d37a1c87aef7f3f03c.js": "/healthy_lifestyle_app/precache-manifest.65d5a16a3363a8d37a1c87aef7f3f03c.js",
+  "service-worker.js": "/healthy_lifestyle_app/service-worker.js"
 }
