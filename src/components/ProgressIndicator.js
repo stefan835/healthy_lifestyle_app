@@ -14,16 +14,13 @@ const ProgressIndicator = (props) => {
             if (week === props.user.progress) {
               return <span key={week} className={'week-indicator week-indicator--active'}><span
                 className='progress__number'>{week}</span></span>
-            }
-            else if (week < props.user.progress) {
+            } else if (week < props.user.progress) {
               return <span key={week} className={'week-indicator week-indicator--past'}><span
                 className='progress__number'>{week}</span></span>
-            }
-            else if (week > props.user.progress) {
+            } else if (week > props.user.progress) {
               return <span key={week} className={'week-indicator week-indicator--future'}><span
                 className='progress__number'>{week}</span></span>
-            }
-            else
+            } else
               return null
           })
         }

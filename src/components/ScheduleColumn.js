@@ -6,9 +6,9 @@ import ScheduleColumnFreeDay from "./ScheduleColumnFreeDay";
 const ScheduleColumn = (props) => {
   return (
     props.day.diet ?
-     <ScheduleColumnDietDay index={props.index}/>
+      <ScheduleColumnDietDay index={props.index}/>
       :
-     <ScheduleColumnFreeDay day={props.day}/>
+      <ScheduleColumnFreeDay day={props.day}/>
   )
 };
 

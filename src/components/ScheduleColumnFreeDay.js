@@ -15,7 +15,7 @@ const ScheduleColumnFreeDAy = (props) => {
           />
           GUILT-FREE DAY
         </div>
-       </td>
+      </td>
       <td className='grid print-grid'>
         <span className='print'
               onClick={function () {
