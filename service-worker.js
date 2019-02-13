@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/healthy_lifestyle_app/precache-manifest.65d5a16a3363a8d37a1c87aef7f3f03c.js"
+  "/healthy_lifestyle_app/precache-manifest.f6ca6e553b0679a31c5a726374ccae2f.js"
 );
 
 workbox.clientsClaim();
